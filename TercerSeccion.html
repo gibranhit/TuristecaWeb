@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesone/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="tercer.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <nav class="navegacion navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="row">
+            <div class="col-3">
+                <a class="navbar-brand" href="#"><img class="turi" src="img/turisteca.png" alt=""></a>
+            </div>
+            <div class="col-3">
+                <a class="navbar-brand" href="#"><img class="turi-logo" src="img/turi.png" alt=""></a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secciones<span class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+            <form>
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="¿Encontró lo que buscaba?">
+                    <span class="input-group-btn">
+                  <button class="btn btn-busqueda" type="submit">
+                    <span class="hidden-sm-down">Buscar</span>
+                    <i class="fa fa-search hidden-md-up"></i>
+                    </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <!-- Marketing messaging and featurettes
+
+================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <!-- CONTENIDO -->
+    <div class="container marketing caleta">
+
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette">
+            <div class="col-md-12  text-center">
+                <h2 class="featurette-heading text-center">Caleta.</h2>
+                <p class="lead">Es una de playa mas conocidas y visitadas del puerto de Acapulco,Guerrero, esta dentro de la zona turistica denominada Acapulco tradicional.</p>
+            </div>
+            
+<section class="gallery">
+  <div class="carousel">
+    
+    <input type="radio" id="image1" name="gallery-control" checked>
+    <input type="radio" id="image2" name="gallery-control">
+    <input type="radio" id="image3" name="gallery-control">
+    <input type="radio" id="image4" name="gallery-control">
+    
+    
+    <input type="checkbox" id="fullscreen" name="gallery-fullscreen-control"/>
+    
+    <div class="wrap">
+      
+      <figure>
+        <label for="fullscreen">
+          <img src="https://unsplash.it/1000/700/?random" alt="image1"/>
+        </label>
+      </figure>
+      
+      <figure>
+        <label for="fullscreen">
+          <img src="https://unsplash.it/1200/980/?random" alt="image2"/>
+        </label>
+      </figure>
+
+      <figure>
+        <label for="fullscreen">
+          <img src="https://unsplash.it/1600/880/?random" alt="image3" />
+        </label>
+      </figure>
+
+      <figure>
+        <label for="fullscreen">
+          <img src="https://unsplash.it/2000/1400/?random" alt="image4"/>
+        </label>
+      </figure>
+    </div>
+    
+    <div class="thumbnails">
+      
+      <div class="slider"><div class="indicator"></div></div>
+      
+      <label for="image1" class="thumb" style="background-image: url('https://unsplash.it/700/480/?random')"></label>
+      
+      <label for="image2" class="thumb" style="background-image: url('https://unsplash.it/700/400/?random')"></label>
+      
+      <label for="image3" class="thumb" style="background-image: url('https://unsplash.it/700/410/?random')"></label>
+        
+      <label for="image4" class="thumb" style="background-image: url('https://unsplash.it/700/450/?random')"></label>
+    </div>
+  </div>
+</section>
+ 
+
+        </div>
+    </div>
+    <!-- /CONTENIDO -->
+
+    <!-- MAPA -->
+    <h2 class="featurette-heading text-center">Ubicacion.</h2>
+    <hr>
+    <div id="mapa"></div>
+
+    <hr>
+    <h2 class="featurette-heading text-center">Vista de calle.</h2>
+    <div id="calle"></div>
+    <hr>
+
+    <!-- /MAPA -->
+ 
+    <!--Opciones-->
+    
+    <section class="wrapper">
+    <div class="container-big">
+        <div>
+            <img src="" class="big-logo"/>
+            <h1 class="heading">
+                 Listing
+            </h1>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="carbox">
+                            <a class="img-carbox" href="http://www.big.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                            <img src="https://scontent.fcvj1-1.fna.fbcdn.net/v/t1.0-9/942531_1677246805892331_4351460191955323476_n.jpg?oh=a9873c78b203b36c6b8cf79675545759&oe=5A165221" />
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <a href="http://www.big.com/2016/03/bootstrap-3-carousel-fade-effect.html">McCarthy's Irish Pub 
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Ven, rockea, come, experimenta y que la suerte te acompañe, yeah!.
+                                </p>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="http://www.big.com/2016/03/bootstrap-3-carousel-fade-effect.html" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="carbox">
+                            <a class="img-carbox" href="http://www.big.com/2016/03/5-button-hover-animation-effects-css3.html">
+                            <img src="https://scontent.fcvj1-1.fna.fbcdn.net/v/t1.0-9/18699872_1897734910495443_6452026831134516950_n.jpg?oh=54ba67b6e2086cd864704ae70d98bde7&oe=5A23ECB3" />
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <a href="http://www.big.com/2016/02/awesome-material-design-responsive-menu.html"> Combat Wings
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Presentará nostálgicamente una atmósfera entremezclada con símbolos, imágenes y piezas reales o réplicas militares, es decir, como un museo interno retro y contemporáneo con tema militar, cuyo concepto conoquistará a los jóvenes y a la familia por igual.
+                                </p>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="http://codepen.io/wisnust10/full/ZWERZK/" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="carbox">
+                            <a class="img-carbox" href="http://www.big.com/2016/03/5-button-hover-animation-effects-css3.html">
+                            <img src="https://scontent.fcvj1-1.fna.fbcdn.net/v/t1.0-9/1484724_551893298231917_1125439575_n.jpg?oh=ae7042efa0a6eda3ad972714180babd9&oe=5A305BB3" />
+                          </a>
+                            <div class="carbox-content">
+                                <h4 class="carbox-title">
+                                    <a href="http://www.big.com/2016/03/5-button-hover-animation-effects-css3.html">Buffalo Xtreme
+                                  </a>
+                                </h4>
+                                <p class="">
+                                    Sabemos que quieres divertirte con tus amigos en un lugar agradable, cómodo y con un servicio de primera. Comida tipo buffalo, la mejor selección de música y los mejores eventos deportivos los tenemos nosotros!
+                                </p>
+                            </div>
+                            <div class="carbox-read-more">
+                                <a href="http://www.big.com/2016/03/5-button-hover-animation-effects-css3.html" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <!--/Opciones-->
+    
+    <hr>
+    <div class="container marketing">
+        <section id="facebook">
+            <div class="row">
+                <div id="fb-root" class=" col-5 hidden-sm-down">
+                    <div id="fb-container" class="fb-comments" data-href="https://www.facebook.com/gibrann.hit/posts/1539624072765583" data-numposts="5" data-width="550">
+                    </div>
+                </div>
+                <script>
+                    (function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+
+                </script>
+
+
+
+
+                <div class="fb-page offset-1  col-6 hidden-sm-down " data-tabs="timeline,events,messages" data-href="https://www.facebook.com/McCarthysAcapulco/" data-width="380" data-hide-cover="false"></div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <div class="container marketing">
+
+        <section id="facebook">
+            <div class="row">
+                <div id="fb-root" class="col-sm-12 hidden-sm-up text-center">
+                    <div id="fb-container" class="fb-comments" data-href="https://www.facebook.com/gibrann.hit/posts/1539624072765583" data-numposts="5" data-width="340">
+                    </div>
+                </div>
+                <script>
+                    (function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+
+                </script>
+
+
+
+
+                <div class="fb-page col-sm-12 hidden-sm-up text-center" data-tabs="timeline,events,messages" data-href="https://www.facebook.com/DINA-Banchettos-1135099983171784/" data-width="340" data-hide-cover="false"></div>
+            </div>
+        </section>
+
+        <hr class="featurette-divider">
+
+        <footer>
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/caleta.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApIflOGw-yB86abKl11YK1ZTRDExYLV5w&callback=initMap" async defer></script>
+
+</body>
+
+</html>
